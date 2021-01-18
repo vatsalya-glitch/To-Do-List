@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>My To-Do List</h1>
+    <ul>
+        <a href = "/add_new_task/"><b><strong></strong><p><p style = "color:red"><p style = "font-size:20px">Add new Task</p></p></strong></b></a>
+        {% for i in all_tasks %}
+        <li>{{i.title}}<span style="padding-left:50px"></span>{{i.date}}<span style="padding-left:20px"></span><a href = "">Details</a></li>
+        {% endfor %}
+    </ul>
+</head>
+<body>
+
+</body>
+</html>

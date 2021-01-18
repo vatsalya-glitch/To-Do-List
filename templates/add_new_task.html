@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <form action="add_new_task/" method = "post">{% csrf_token %}
+        <input type="text" name= "Title">
+        <input type="text" name = "Description">
+        <input type="submit" value="Add Todo Item">
+    </form>
+</head>
+<body>
+
+</body>
+</html>
