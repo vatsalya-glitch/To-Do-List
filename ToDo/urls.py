@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Todo_List.views import home_page, create_task
+from Todo_List.views import home_page, create_task, detail_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('my_task/', home_page),
     path('add_new_task/', create_task),
+    path('my_task/<pk>/', detail_view.as_view())
 ]
